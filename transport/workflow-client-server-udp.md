@@ -28,9 +28,7 @@ The client-server workflow in this guide shows the subtle differences between us
 
 A server is an endpoint that listens for incoming connection requests and sends and receives messages. This section shows creating a simple server with UTP 2.0.
 
-Start by creating a C# script in the Unity Editor. Name the script ServerBehaviour.cs.
-
-**Filename**: [`ServerBehaviour.cs`](samples/serverbehaviour.cs.md)
+Start by creating a C# script in the Unity Editor. Name the script `ServerBehaviour.cs`.
 
 ```csharp
 using System.Collections;
@@ -91,9 +89,7 @@ public class ServerBehaviour : MonoBehaviour {
 
     void Update () {
     }
-
-public NetworkDriver m_Driver;
-private NativeList<NetworkConnection> m_Connections;
+}
 ```
 
 Next, expand the `Start`, `OnDestroy`, and `Update` methods.
@@ -181,12 +177,11 @@ The following code iterates through the connection list and removes any stale co
 
 ```csharp
    // Clean up connections
-    for (int i = 0; i < m_Connections.Length; i++)
+    for (int i = m_Connections.Length - 1; i >= 0; i--)
     {
         if (!m_Connections[i].IsCreated)
         {
             m_Connections.RemoveAtSwapBack(i);
-            --i;
         }
     }
 ```
@@ -420,15 +415,15 @@ If you’ve been following along with the tutorial and using the sample code, yo
 
 Add a new empty [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) to your **Scene**.
 
-![GameObject](../static/img/transport/gameobject-2.png)
+![GameObject](/img/transport/gameobject-2.png)
 
 Add both the `ServerBehaviour` and the `ClientBehaviour` scripts to the GameObject.
 
-![Inspector](../static/img/transport/inspector-2.png)
+![Inspector](/img/transport/inspector-2.png)
 
 Select **Play** to enter Play mode. You should see five log messages in the **Console** window:
 
-![Console output](../static/img/transport/console-2.png)
+![Console output](/img/transport/console-2.png)
 
 ## WebSocket
 

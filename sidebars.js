@@ -7,7 +7,7 @@ module.exports = {
         {
             "collapsed": true,
             "type": "category",
-            "label": "Release Notes",
+            "label": "Release notes",
             "items": [
                 {
                     type: "doc",
@@ -28,13 +28,13 @@ module.exports = {
         },
         {
             "type": "link",
-            "label": "API Reference",
-            "href": "https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.5/api/index.html",
+            "label": "API reference",
+            "href": "https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@2.0/api/index.html",
         },
         {
             "collapsed": true,
             "type": "category",
-            "label": "Get Started",
+            "label": "Get started",
             "items": [
                 {
                     "type": "doc",
@@ -42,66 +42,83 @@ module.exports = {
                 },
                 {
                     "type": "doc",
-                    "id": "installation/upgrade_from_mlapi",
-                },
-                {
-                    "type": "doc",
-                    "id": "installation/upgrade_from_UNet"
-                },
-                {
-                    "type": "doc",
                     "id": "tutorials/get-started-ngo"
                 },
                 {
-                    "type": "doc",
-                    "id": "tutorials/command-line-helper"
+                  "collapsed": true,
+                  "type": "category",
+                  "label": "Distributed authority quickstart",
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "learn/distributed-authority-quick-start"
+                    },
+                    {
+                        "type": "doc",
+                        "id": "learn/distributed-authority-webgl"
+                    },
+                  ]
+                  },
+                {
+                  "collapsed": true,
+                  "type": "category",
+                  "label": "Migrating",
+                  "items": [
+                    {
+                        "type": "doc",
+                        "id": "installation/upgrade_from_UNet"
+                    },
+                    {
+                        "type": "doc",
+                        "id": "installation/upgrade_from_mlapi"
+                    },
+                  ],
                 },
             ],
         },
         {
             "collapsed": true,
             "type": "category",
-            "label": "Lag Conceptual Knowledge",
-            "items": [
-                    {
-                        "type": "doc",
-                        "id": "learn/ticks-and-update-rates",
-                    },
-                    {
-                        "type": "doc",
-                        "id": "learn/lagandpacketloss",
-                    },
-                    {
-                        "type": "doc",
-                        "id": "learn/clientside_interpolation",
-                    },
-                    {
-                        "type": "doc",
-                        "id": "learn/dealing-with-latency",
-                    },
-                ],
-        },
-        {
-            "collapsed": true,
-            "type": "category",
             "label": "Configuration",
             "items": [
-                {
-                    "type": "doc",
-                    "id": "basics/connection-approval"
-                },
-                {
-                    "type": "doc",
-                    "id": "basics/max-players"
-                },
-                {
-                    "type": "doc",
-                    "id": "terms-concepts/network-topologies"
-                },
-                {
-                    "type": "doc",
-                    "id": "learn/listen-server-host-architecture"
-                },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Network topologies",
+                "items": [
+                  {
+                      "type": "doc",
+                      "id": "terms-concepts/network-topologies"
+                  },
+                  {
+                      "type": "doc",
+                      "id": "terms-concepts/client-server"
+                  },
+                  {
+                      "type": "doc",
+                      "id": "learn/listen-server-host-architecture"
+                  },
+                  {
+                      "type": "doc",
+                      "id": "terms-concepts/distributed-authority"
+                  },
+                ],
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Configuring connections",
+                "items": [
+                  {
+                      "type": "doc",
+                      "id": "basics/connection-approval"
+                  },
+                  {
+                      "type": "doc",
+                      "id": "basics/max-players"
+                  },
+                ],
+              },
                 {
                     "type": "doc",
                     "id": "advanced-topics/transports"
@@ -115,23 +132,41 @@ module.exports = {
         {
             "collapsed": true,
             "type": "category",
-            "label": "Networking Components",
+            "label": "Networking components",
             "items": [
                 {
-                    "type": "doc",
-                    "id": "basics/networkobject"
+                  "collapsed": true,
+                  "type": "category",
+                  "label": "NetworkObject",
+                  "items": [
+                      {
+                          "type": "doc",
+                          "id": "basics/networkobject"
+                      },
+                      {
+                          "type": "doc",
+                          "id": "basics/playerobjects"
+                      },
+                      {
+                          "type": "doc",
+                          "id": "advanced-topics/networkobject-parenting"
+                      },
+                    ]
                 },
                 {
-                    "type": "doc",
-                    "id": "advanced-topics/networkobject-parenting",
-                },
-                {
-                    "type": "doc",
-                    "id": "basics/networkbehavior"
-                },
-                {
-                    "type": "doc",
-                    "id": "advanced-topics/physics"
+                  "collapsed": true,
+                  "type": "category",
+                  "label": "NetworkBehaviour",
+                  "items": [
+                      {
+                          "type": "doc",
+                          "id": "basics/networkbehavior"
+                      },
+                      {
+                          "type": "doc",
+                          "id": "basics/networkbehavior-synchronize"
+                      },
+                    ]
                 },
                 {
                     "type": "doc",
@@ -146,12 +181,31 @@ module.exports = {
                     "label": "NetworkAnimator",
                     "id": "components/networkanimator"
                 },
+                {
+                    "type": "doc",
+                    "id": "advanced-topics/physics"
+                }
             ]
         },
         {
             "collapsed": true,
             "type": "category",
-            "label": "Spawning and Ownership",
+            "label": "Ownership and authority",
+            "items": [
+                {
+                    "type": "doc",
+                    "id": "basics/ownership"
+                },
+                {
+                    "type": "doc",
+                    "id": "basics/race-conditions"
+                },
+            ]
+        },
+        {
+            "collapsed": true,
+            "type": "category",
+            "label": "Spawning and despawning",
             "items": [
                 {
                     "type": "doc",
@@ -165,41 +219,83 @@ module.exports = {
                     "type": "doc",
                     "id": "basics/object-visibility"
                 },
+                {
+                    "type": "doc",
+                    "id": "basics/spawning-synchronization"
+                },
+                {
+                    "type": "doc",
+                    "id": "basics/deferred-despawning"
+                },
             ]
         },
         {
             "collapsed": true,
             "type": "category",
-            "label": "Network Synchronization",
+            "label": "Latency and performance",
+            "items": [
+                    {
+                        "type": "doc",
+                        "id": "learn/lagandpacketloss"
+                    },
+                    {
+                        "type": "doc",
+                        "id": "learn/ticks-and-update-rates"
+                    },
+                    {
+                        "type": "doc",
+                        "id": "learn/clientside_interpolation"
+                    },
+                    {
+                        "type": "doc",
+                        "id": "advanced-topics/client-anticipation"
+                    },
+                    {
+                        "type": "doc",
+                        "id": "learn/dealing-with-latency"
+                    },
+                ],
+        },
+        {
+            "collapsed": true,
+            "type": "category",
+            "label": "Network synchronization",
             "items": [
                 {
                     "type": "doc",
                     "id": "advanced-topics/ways-synchronize"
-                },                   
-                {
-                    "type": "doc",
-                    "id": "advanced-topics/messaging-system"
-                },             
+                },
                 {
                     "collapsed": true,
                     "type": "category",
-                    "label": "RPC Remote Procedure Call",
+                    "label": "NetworkVariables",
                     "items": [
                         {
                             "type": "doc",
-                            "id": "advanced-topics/message-system/clientrpc"
+                            "id": "basics/networkvariable"
                         },
                         {
                             "type": "doc",
-                            "id": "advanced-topics/message-system/serverrpc"
+                            "id": "basics/custom-networkvariables"
+                        },
+                    ],
+                },
+                {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Remote procedure calls (RPCs)",
+                    "items": [
+                        {
+                            "type": "doc",
+                            "id": "advanced-topics/messaging-system"
+                        },
+                        {
+                            "type": "doc",
+                            "id": "advanced-topics/message-system/rpc"
                         },
                         {
                             "type": "doc",
                             "id": "advanced-topics/message-system/reliability"
-                        },
-                        {
-                            "type": "doc",
-                            "id": "advanced-topics/message-system/execution-table"
                         },
                         {
                             "type": "doc",
@@ -210,10 +306,6 @@ module.exports = {
                             "type": "category",
                             "label": "RPCs vs NetworkVariables",
                             "items": [
-                                {
-                                    "type": "doc",
-                                    "id": "basics/networkvariable"
-                                },
                                 {
                                     "type": "doc",
                                     "id": "learn/rpcvnetvar"
@@ -228,12 +320,39 @@ module.exports = {
                             "type": "doc",
                             "id": "advanced-topics/message-system/rpc-compatibility"
                         },
+                        {
+                            "collapsed": true,
+                            "type": "category",
+                            "label": "Legacy RPC options",
+                            "items": [
+                                {
+                                    "type": "doc",
+                                    "id": "advanced-topics/message-system/clientrpc"
+                                  },
+                                  {
+                                      "type": "doc",
+                                      "id": "advanced-topics/message-system/serverrpc"
+                                  },
+                                  {
+                                      "type": "doc",
+                                      "id": "advanced-topics/message-system/execution-table"
+                                  },
+                            ],
+                        },
                     ]
+                },
+                {
+                    "type": "doc",
+                    "id": "advanced-topics/message-system/custom-messages"
+                },
+                {
+                    "type": "doc",
+                    "id": "advanced-topics/connection-events"
                 },
                 {
                     "collapsed": true,
                     "type": "category",
-                    "label": "Network Update Loop",
+                    "label": "Network update loop",
                     "items": [
                         {
                             "type": "doc",
@@ -248,10 +367,6 @@ module.exports = {
                 {
                     "type": "doc",
                     "id": "advanced-topics/networktime-ticks"
-                },
-                {
-                    "type": "doc",
-                    "id": "advanced-topics/message-system/custom-messages"
                 },
             ]
         },
@@ -301,7 +416,7 @@ module.exports = {
         {
             "collapsed": true,
             "type": "category",
-            "label": "Scene Management",
+            "label": "Scene management",
             "items": [
                 {
                     "type": "doc",
@@ -310,8 +425,8 @@ module.exports = {
                 {
                     "collapsed": true,
                     "type": "category",
-                    "label": "Integrated Management",
-                    "items": [                                
+                    "label": "Integrated management",
+                    "items": [
                         {
                             "type": "doc",
                             "id": "basics/scenemanagement/using-networkscenemanager"
@@ -331,19 +446,19 @@ module.exports = {
                         {
                             "type": "doc",
                             "id": "basics/scenemanagement/inscene-placed-networkobjects"
-                        }, 
+                        },
                     ]
-                },                
+                },
                 {
                     "type": "doc",
                     "id": "basics/scenemanagement/custom-management"
-                },                                                                                                     
+                },
             ]
         },
         {
             "collapsed": true,
             "type": "category",
-            "label": "Session Management",
+            "label": "Session management",
             "items": [
                 {
                     "type": "doc",
@@ -358,7 +473,7 @@ module.exports = {
         {
             "collapsed": true,
             "type": "category",
-            "label": "Testing and Debugging",
+            "label": "Testing and debugging",
             "items": [
                 {
                     "type": "doc",
@@ -382,6 +497,10 @@ module.exports = {
                 },
                 {
                     "type": "doc",
+                    "id": "tutorials/command-line-helper"
+                },
+                {
+                    "type": "doc",
                     "id": "troubleshooting/troubleshooting"
                 },
                 {
@@ -393,8 +512,12 @@ module.exports = {
         {
             "collapsed": true,
             "type": "category",
-            "label": "Educational Samples",
+            "label": "Educational samples",
             "items": [
+                {
+                    "type": "doc",
+                    "id": "learn/sample-dedicated-server"
+                },
                 {
                     "collapsed": true,
                     "type": "category",
@@ -433,15 +556,15 @@ module.exports = {
                 {
                     "collapsed": true,
                     "type": "category",
-                    "label": "Bitesize Samples",
+                    "label": "Bitesize samples",
                     "items": [
                         {
                             "type": "doc",
-                            "id": "learn/bitesize/bitesize-introduction"
+                            "id": "learn/bitesize/bitesize-usecases"
                         },
                         {
                             "type": "doc",
-                            "id": "learn/bitesize/bitesize-invaders"
+                            "id": "learn/bitesize/bitesize-introduction"
                         },
                         {
                             "type": "doc",
@@ -455,6 +578,21 @@ module.exports = {
                             "type": "doc",
                             "id": "learn/bitesize/bitesize-dynamicPrefabs"
                         },
+                        {
+                            "type": "doc",
+                            "id": "learn/bitesize/bitesize-socialhub"
+                        },
+                    ]
+                },
+                {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Deprecated samples",
+                    "items": [
+                        {
+                            "type": "doc",
+                            "id": "learn/bitesize/bitesize-invaders"
+                        },
                     ]
                 },
             ],
@@ -462,7 +600,7 @@ module.exports = {
         {
             "collapsed": true,
             "type": "category",
-            "label": "Community Contributions",
+            "label": "Community contributions",
             "items": [
                 {
                     "type": "doc",

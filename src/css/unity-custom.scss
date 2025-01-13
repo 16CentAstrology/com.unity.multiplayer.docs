@@ -208,7 +208,7 @@ summary {
   background-image: 
     linear-gradient(rgba(0,0,0,0.1),
     rgba(0,0,0,0.65)),
-    url("../../static/img/hero-boss1.jpg") !important;
+    url("/img/hero-boss1.jpg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -219,7 +219,7 @@ summary {
   background-image: 
     linear-gradient(to right, rgba(15, 10, 78, 1.0),
     rgba(0,0,0,0.25)),
-    url("../../static/img/hero-treasure.jpg") !important;
+    url("/img/hero-treasure.jpg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -234,7 +234,7 @@ summary {
   background-image: 
     linear-gradient(rgba(0,0,0,0.3),
     rgba(0,0,0,0.75)),
-    url("../../static/img/hero-blog.jpg") !important;
+    url("/img/hero-blog.jpg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -750,6 +750,39 @@ html[data-theme='dark'] .node polygon {
   font-size: 14px;
   max-width: 600px;
   --ifm-link-color: #757575;
+}
+
+.footer__legal ul {
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  list-style-type: none;
+
+  a {
+    color: var(--ifm-footer-title-color);
+  }
+}
+
+.footer__legal-onetrusttick {
+  margin-right: 0.5rem;
+}
+
+// override the OneTrust styling for the link-button
+#ot-sdk-btn.ot-sdk-show-settings {
+  color: var(--ifm-footer-title-color) !important;
+  border: inherit !important;
+  white-space: inherit !important;
+  padding: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  transition-property: all !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: .4s !important;
+  &:hover {
+    background-color: inherit !important;
+  }
 }
 
 .feedback-edit {

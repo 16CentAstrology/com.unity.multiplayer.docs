@@ -1,13 +1,23 @@
 ---
 id: ngo-changelog
-title: Netcode for GameObjects Changelog
-description: NGOs changelog and release notes
+title: Netcode for GameObjects changelog
+description: Netcode for Gameobjects changelog and release notes
 ---
 
 The following content tracks features, updates, bug fixes, and refactoring for the next release of Unity Netcode. Since Netcode for GameObjects is open source, you can access the full release notes and changelogs in the [com.unity.netcode.gameobjects GitHub repository](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects).
 
 | Release | Date | Changelog |
 |---|---|---|
+| 2.2.0 | 2024-12-12 | [2.2.0](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F2.2.0) |
+| 2.1.1 | 2024-10-21 | [2.1.1](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F2.1.1) |
+| 2.0.0 | 2024-09-17 | [2.0.0](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F2.0.0) |
+| 1.11.0 | 2024-08-20 | [1.11.0](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F1.11.0) |
+| 1.10.0 | 2024-07-22 | [1.10.0](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F1.10.0) |
+| 1.9.1 | 2024-04-18 | [1.9.1](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F1.9.1) |
+| 1.8.0 | 2023-12-12 | [1.8.0](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F1.8.0) |
+| 1.7.1 | 2023-11-15 | [1.7.1](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F1.7.1) |
+| 1.7.0 | 2023-10-11 | [1.7.0](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F1.7.0) |
+| 1.6.0 | 2023-08-29 | [1.6.0](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F1.6.0) |
 | 1.5.2 | 2023-07-24 | [1.5.2](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F1.5.2) |
 | 1.5.1 | 2023-06-09 | [1.5.1](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F1.5.1) |
 | 1.4.0 | 2023-04-10 | [1.4.0](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/releases/tag/ngo%2F1.4.0) |
