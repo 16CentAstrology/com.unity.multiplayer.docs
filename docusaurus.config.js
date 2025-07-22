@@ -31,9 +31,9 @@ module.exports = {
     announcementBar: {
       id: "prerelease", // Any value that will identify this message.
       content:
-        '⭐️ If you like our documentation, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/Unity-Technologies/com.unity.multiplayer.docs">GitHub</a> and <a target="_blank" rel="noopener noreferrer" href="https://github.com/Unity-Technologies/com.unity.multiplayer.docs/wiki">contribute</a>! ⭐️',
-      backgroundColor: "#3578e5", // Defaults to `#fff`.
-      textColor: "#ffffff", // Defaults to `#000`.
+        '⚠ This website is no longer updated and will be archived soon. Please refer to the official package documentation for the most recent information about [Netcode for GameObjects](https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@latest?subfolder=/manual/index.html), [Unity Transport](https://docs.unity3d.com/Packages/com.unity.transport@latest?subfolder=/manual/index.html), [Multiplayer Tools](https://docs.unity3d.com/Packages/com.unity.multiplayer.tools@latest?subfolder=/manual/index.html) and [Multiplayer Play Mode](https://docs.unity3d.com/Packages/com.unity.multiplayer.playmode@latest?subfolder=/manual/index.html). ⚠',
+      backgroundColor: "#e53535ff", // Defaults to `#fff`.
+      textColor: "#000000ff", // Defaults to `#000`.
       isCloseable: true, // Defaults to `true`.
     },
     algolia: {
