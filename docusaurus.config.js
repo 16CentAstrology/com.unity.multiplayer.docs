@@ -31,10 +31,10 @@ module.exports = {
     announcementBar: {
       id: "prerelease", // Any value that will identify this message.
       content:
-        '⚠ This website is no longer updated and will be archived soon. Please refer to the official package documentation for the most recent information about <a target="_blank" rel="noopener noreferrer" href="https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@latest?subfolder=/manual/index.html">Netcode for GameObjects</a>, <a target="_blank" rel="noopener noreferrer" href="https://docs.unity3d.com/Packages/com.unity.transport@latest?subfolder=/manual/index.html">Unity Transport</a>, <a target="_blank" rel="noopener noreferrer" href="https://docs.unity3d.com/Packages/com.unity.multiplayer.tools@latest?subfolder=/manual/index.html">Multiplayer Tools</a> and <a target="_blank" rel="noopener noreferrer" href="https://docs.unity3d.com/Packages/com.unity.multiplayer.playmode@latest?subfolder=/manual/index.html">Multiplayer Play Mode</a>. ⚠',
+        '⚠ This website is no longer updated and will be archived soon. Please refer to the official package documentation for the most recent information about <a target="_blank" rel="noopener noreferrer" href="https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@latest?subfolder=/manual/index.html">Netcode for GameObjects</a>, <a target="_blank" rel="noopener noreferrer" href="https://docs.unity3d.com/Packages/com.unity.transport@latest?subfolder=/manual/index.html">Unity Transport</a>, <a target="_blank" rel="noopener noreferrer" href="https://docs.unity3d.com/Packages/com.unity.multiplayer.tools@latest?subfolder=/manual/index.html">Multiplayer Tools</a>, and <a target="_blank" rel="noopener noreferrer" href="https://docs.unity3d.com/Packages/com.unity.multiplayer.playmode@latest?subfolder=/manual/index.html">Multiplayer Play Mode</a>. ⚠',
       backgroundColor: "#e53535ff", // Defaults to `#fff`.
       textColor: "#000000ff", // Defaults to `#000`.
-      isCloseable: true, // Defaults to `true`.
+      isCloseable: false, // Defaults to `true`.
     },
     algolia: {
       apiKey: "dd157a25931bf7948bfc08e79fbe2c8c",
